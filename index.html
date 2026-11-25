@@ -15,21 +15,28 @@
     <div class="nav-container">
       <a href="index.html" class="brand">
         <img src="Group LOGO.jpg" alt="Ntungamo Municipality Born Again Community sacco
- Logo" class="nav-logo" />
-        <span>Ntungamo Municipality Born Again Community sacco
+            Logo" class="nav-logo" />
+        <span>Ntungamo Municipality Born Again Community Sacco
         </span>
       </a>
       <nav>
         <ul>
+          <li class="mobile-close-item">
+            <button type="button" class="mobile-close-btn"
+              onclick="document.querySelector('.nav-container nav').classList.remove('mobile-open')"
+              aria-label="Close Menu">&times;</button>
+          </li>
+
           <li><a href="index.html" class="active">Home</a></li>
           <li>
             <a href="ventures.html">Business Ventures ▾</a>
             <div class="dropdown">
-              <a href="ventures.html#sacco">SACCO Sector (Micro Finance)</a>
-              <a href="ventures.html#insurance">Insurance Sector</a>
-              <a href="ventures.html#housing">Land &amp; Housing Finance</a>
-              <a href="ventures.html#academic">Academic Sector</a>
-              <a href="ventures.html#trading">Trading &amp; Supermarkets</a>
+              <a href="sacco.html">SACCO Sector (Micro Finance)</a>
+              <a href="insurance.html">Insurance Sector</a>
+              <a href="housing.html">Land &amp; Housing Finance</a>
+              <a href="academic.html">Academic Sector</a>
+              <a href="trading.html">Trading &amp; Supermarkets</a>
+
             </div>
           </li>
           <li>
@@ -38,7 +45,8 @@
               <a href="forms.html?type=membership">Membership Registration Form</a>
               <a href="forms.html?type=family">Family Protection Subscription</a>
               <a href="forms.html?type=loan">Loan Application Form</a>
-              <a href="forms.html?type=agent">Be An Agent</a>
+              <a href="forms.html?type=family">Family Protection Subscription</a>
+<a href="forms.html?type=fif">Funeral Insurance Fund (F.I.F.)</a>
             </div>
           </li>
           <li>
@@ -46,7 +54,8 @@
             <div class="dropdown">
               <a href="forms.html?type=investor">An Investor</a>
               <a href="forms.html?type=virtual">Virtual Business Collaborations</a>
-              <a href="forms.html?type=agent">Be An Agent</a>
+              <a href="forms.html?type=family">Family Protection Subscription</a>
+<a href="forms.html?type=fif">Funeral Insurance Fund (F.I.F.)</a>
             </div>
           </li>
           <li>
@@ -62,6 +71,14 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <!-- Mobile Navigation Button -->
+      <button type="button" class="summary-menu-btn"
+        onclick="document.querySelector('.nav-container nav').classList.toggle('mobile-open')"
+        aria-label="Open Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
@@ -69,7 +86,7 @@
     <!-- Hero Parallax Banner -->
     <div class="parallax-section parallax-hero">
       <div class="parallax-overlay">
-        <div class="hero-tag">COMMUNITY BASED ORGANISATION (CBO) • NTUNGAMO, UGANDA</div>
+        <div class="hero-tag">© 2026 Born Again Development SACCO – Ntungamo Municipality REG NO: 12070/RCS</div>
         <h1>Growing Your Wealth Together on a Foundation of Faith</h1>
         <p>Join Ntungamo’s trusted Pentecostal SACCO and investment group. Save securely, access affordable loans, and
           earn annual dividends while uplifting our community.</p>
@@ -126,22 +143,25 @@
       <div class="plain-grid-2">
         <div class="plain-text-block">
           <h3>A Decade of Proven Stewardship Since 2015</h3>
-          <p>Founded in 2001 in Ntungamo, Uganda by <strong>Bp. Stempson Kamwesigye</strong> and <strong>Pastor Oliva
+          <p>Founded in 2016 in Ntungamo, Uganda by <strong>Bp. Stempson Kamwesigye</strong> and <strong>Pastor Oliva
               Nalubega Kamwesigye</strong> at Revival Centre Cathedral Church. In October 2015, Church Administrator
             <strong>Mr. Kizito Cosmas</strong>, alongside <strong>Mr. Mukole Johnbosco</strong> and <strong>Miss
               Arinaitwe Peress</strong>, researched sustainable projects to support church operations and empower
-            believers.</p>
+            believers.
+          </p>
           <p>By the end of 2015, local church members raised an initial share capital of <strong>UGX 830,000</strong> to
             launch a faith-grounded financial institution, officially registered with the district local government as
             <strong>Ntungamo Municipality Born Again Community sacco
-              (BADG)</strong>.</p>
+              (BADG)</strong>.
+          </p>
         </div>
 
         <div class="plain-text-block">
           <h3>Our Symbol &amp; Identity Colors</h3>
           <p><strong>Logo Meaning:</strong> The <strong>Book</strong> represents the Holy Bible; the
             <strong>Dove</strong> symbolizes the Holy Spirit; the <strong>Human Figures</strong> signify unity and
-            upholding one another to higher levels.</p>
+            upholding one another to higher levels.
+          </p>
           <ul class="plain-color-list">
             <li><span class="dot dot-red"></span><strong>Red Color:</strong> Represents the brotherhood spirit of unity.
             </li>
@@ -168,7 +188,6 @@
       <div>
         <h4>Ntungamo Municipality Born Again Community sacco
         </h4>
-        <p> Ntungamo Municipality Born Again Community Sacco.</p>
       </div>
       <div>
         <h4>Quick Links</h4>
@@ -185,11 +204,28 @@
     <footer>
       <div class="footer-logo-wrap">
         <img src="Group LOGO.jpg" alt="Ntungamo Municipality Born Again Community sacco
- Logo" class="footer-logo" />
+       Logo" class="footer-logo" />
       </div>
     </footer>
 
   </footer>
+  <script>
+    document.querySelectorAll('.nav-container nav li > a').forEach(link => {
+      if (link.nextElementSibling && link.nextElementSibling.classList.contains('dropdown')) {
+        link.addEventListener('click', e => {
+          if (window.innerWidth <= 900) {
+            e.preventDefault();
+            link.parentElement.classList.toggle('sub-open');
+          }
+        });
+      }
+    });
+  </script>
+
+  <button type="button"
+    onclick="window.scrollTo({top:0,behavior:'smooth'});document.querySelector('.nav-container nav').classList.add('mobile-open');"
+    style="position:fixed;bottom:20px;right:20px;background:#1e3a8a;color:#ffffff;border:none;border-radius:50px;padding:12px 20px;font-size:0.95rem;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,0.3);z-index:99999;cursor:pointer;">&uarr;
+    Top / Menu</button>
 </body>
 
 </html>

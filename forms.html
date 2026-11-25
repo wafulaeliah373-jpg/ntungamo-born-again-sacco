@@ -35,12 +35,14 @@
           </li>
           <li>
             <a href="forms.html" class="active">Forms ▾</a>
+
             <div class="dropdown">
               <a href="forms.html?type=membership">Membership Registration Form</a>
               <a href="forms.html?type=family">Family Protection Subscription</a>
               <a href="forms.html?type=loan">Loan Application Form</a>
-
-              <a href="forms.html?type=agent">Be An Agent</a>
+              <a href="forms.html?type=family">Family Protection Subscription</a>
+              <a href="forms.html?type=fif">Funeral Insurance Fund (F.I.F.)</a>
+              <a href="forms.html?type=group">SACCO Group Account Opening form</a>
               <a href="forms.html?type=fixed-tender">Fixed Deposit Tender Form</a>
               <a href="forms.html?type=fixed-withdrawal">Fixed Deposit Withdrawal Request</a>
 
@@ -51,7 +53,8 @@
             <div class="dropdown">
               <a href="forms.html?type=investor">An Investor</a>
               <a href="forms.html?type=virtual">Virtual Business Collaborations</a>
-              <a href="forms.html?type=agent">Be An Agent</a>
+              <a href="forms.html?type=family">Family Protection Subscription</a>
+
             </div>
           </li>
           <li>
@@ -189,6 +192,145 @@
           <button type="submit" class="btn btn-primary btn-full">Submit Membership Registration</button>
 
       </div>
+
+
+      <div class="group"> <!-- SACCO Group Account Opening Form -->
+        <div class="card form-box" id="group">
+          <style="margin-top: 2.5rem; max-width: 800px; margin-left: auto; margin-right: auto;"></style>></style>
+            <div class="form-logo-header">
+              <img src="Group LOGO.jpg" alt="Ntungamo Municipality Born Again Community SACCO Logo"
+                class="form-top-logo" />
+              <span class="form-org-name">NTUNGAMO MUNICIPALITY BORN AGAIN COMMUNITY SACCO</span>
+            </div>
+            <h3 style="text-align: center; margin-bottom: 1rem;">SACCO GROUP ACCOUNT OPENING FORM</h3>
+
+            <form action="https://formsubmit.co" method="POST" enctype="multipart/form-data">
+              <input type="hidden" name="_subject" value="New SACCO Group Account Opening Form" />
+
+              <div class="form-group">
+                <label>Date</label>
+                <input type="date" name="Opening_Date" required />
+              </div>
+
+              <div class="form-group">
+                <label>Mode of Account Operation</label>
+                <select name="Mode_Of_Operation" required>
+                  <option value="">-- Select Mode of Operation --</option>
+                  <option value="1. All Must Sign">1. All Must Sign</option>
+                  <option value="2. Either-Two can Sign">2. Either-Two can Sign</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>A/C No. (If assigned) &amp; A/C Name</label>
+                <input type="text" name="Account_No_And_Name" placeholder="A/C No. (optional) & Group Account Name"
+                  required />
+              </div>
+
+              <!-- 1st Accountholder -->
+              <hr style="margin: 1.5rem 0; border: 0; border-top: 2px solid #e2e8f0;" />
+              <h4 style="margin-bottom: 0.75rem; color: #0f172a;">1<sup>st</sup> &ndash; ACCOUNTHOLDER ONE</h4>
+              <div class="form-group"><label>FULL Name</label><input type="text" name="Holder1_Full_Name" required />
+              </div>
+              <div class="form-group"><label>Date of Birth</label><input type="date" name="Holder1_DOB" required />
+              </div>
+              <div class="form-group"><label>Marital Status</label><input type="text" name="Holder1_Marital_Status"
+                  required /></div>
+              <div class="form-group">
+                <label>Gender</label>
+                <select name="Holder1_Gender" required>
+                  <option value="">-- Select --</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Contact(s)</label><input type="tel" name="Holder1_Contacts" required />
+              </div>
+              <div class="form-group"><label>Emails</label><input type="email" name="Holder1_Emails" /></div>
+              <div class="form-group"><label>Employment</label><input type="text" name="Holder1_Employment" required />
+              </div>
+              <div class="form-group"><label>Your Village / Cell</label><input type="text" name="Holder1_Village_Cell"
+                  required /></div>
+              <div class="form-group"><label>Position &amp; Digital Signature (Full Name)</label><input type="text"
+                  name="Holder1_Position_Sign" placeholder="e.g. Chairperson - Full Name" required /></div>
+              <div class="form-group"><label>1<sup>st</sup> Accountholder Passport Photo</label><input type="file"
+                  name="Holder1_Photo" accept="image/*" required /></div>
+
+              <!-- 2nd Accountholder -->
+              <hr style="margin: 1.5rem 0; border: 0; border-top: 2px solid #e2e8f0;" />
+              <h4 style="margin-bottom: 0.75rem; color: #0f172a;">2<sup>nd</sup> &ndash; ACCOUNTHOLDER TWO</h4>
+              <div class="form-group"><label>FULL Name</label><input type="text" name="Holder2_Full_Name" required />
+              </div>
+              <div class="form-group"><label>Date of Birth</label><input type="date" name="Holder2_DOB" required />
+              </div>
+              <div class="form-group"><label>Marital Status</label><input type="text" name="Holder2_Marital_Status"
+                  required /></div>
+              <div class="form-group">
+                <label>Gender</label>
+                <select name="Holder2_Gender" required>
+                  <option value="">-- Select --</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Contact(s)</label><input type="tel" name="Holder2_Contacts" required />
+              </div>
+              <div class="form-group"><label>Emails</label><input type="email" name="Holder2_Emails" /></div>
+              <div class="form-group"><label>Employment</label><input type="text" name="Holder2_Employment" required />
+              </div>
+              <div class="form-group"><label>Your Village / Cell</label><input type="text" name="Holder2_Village_Cell"
+                  required /></div>
+              <div class="form-group"><label>Position &amp; Digital Signature (Full Name)</label><input type="text"
+                  name="Holder2_Position_Sign" placeholder="e.g. Secretary - Full Name" required /></div>
+              <div class="form-group"><label>2<sup>nd</sup> Accountholder Passport Photo</label><input type="file"
+                  name="Holder2_Photo" accept="image/*" required /></div>
+
+              <!-- 3rd Accountholder -->
+              <hr style="margin: 1.5rem 0; border: 0; border-top: 2px solid #e2e8f0;" />
+              <h4 style="margin-bottom: 0.75rem; color: #0f172a;">3<sup>rd</sup> &ndash; ACCOUNTHOLDER THREE</h4>
+              <div class="form-group"><label>FULL Name</label><input type="text" name="Holder3_Full_Name" required />
+              </div>
+              <div class="form-group"><label>Date of Birth</label><input type="date" name="Holder3_DOB" required />
+              </div>
+              <div class="form-group"><label>Marital Status</label><input type="text" name="Holder3_Marital_Status"
+                  required /></div>
+              <div class="form-group">
+                <label>Gender</label>
+                <select name="Holder3_Gender" required>
+                  <option value="">-- Select --</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Contact(s)</label><input type="tel" name="Holder3_Contacts" required />
+              </div>
+              <div class="form-group"><label>Emails</label><input type="email" name="Holder3_Emails" /></div>
+              <div class="form-group"><label>Employment</label><input type="text" name="Holder3_Employment" required />
+              </div>
+              <div class="form-group"><label>Your Village / Cell</label><input type="text" name="Holder3_Village_Cell"
+                  required /></div>
+              <div class="form-group"><label>Position &amp; Digital Signature (Full Name)</label><input type="text"
+                  name="Holder3_Position_Sign" placeholder="e.g. Treasurer - Full Name" required /></div>
+              <div class="form-group"><label>3<sup>rd</sup> Accountholder Passport Photo</label><input type="file"
+                  name="Holder3_Photo" accept="image/*" required /></div>
+
+              <!-- Certified National IDs -->
+              <hr style="margin: 1.5rem 0; border: 0; border-top: 2px solid #e2e8f0;" />
+              <div class="form-group">
+                <label><strong>NB: Attach Certified National ID Copies for Each (Select All 3
+                    PDFs/Images)</strong></label>
+                <input type="file" name="Certified_National_IDs" accept=".pdf,image/*" multiple required />
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">Submit Group Account Opening Form</button>
+            </form>
+        </div>
+
+      </div>
+
+
+
+
 
       <!-- 2. Family Protection Subscription Form -->
       <div class="card form-box" id="family">
@@ -691,7 +833,325 @@
 
         </form>
       </div>
+      <!-- 5B. Shareholder Guarantees Form -->
+      <div class="card form-box" id="guarantees">
+        <div class="form-logo-header">
+          <img src="Group LOGO.jpg" alt="Ntungamo Municipality Born Again Community SACCO Logo" class="form-top-logo" />
+          <span class="form-org-name">Ntungamo Municipality Born Again Community SACCO</span>
+        </div>
+        <h3>Shareholder Loan Guarantee Form</h3>
+        <form action="https://formsubmit.co" method="POST">
+          <input type="hidden" name="_subject" value="New Shareholder Guarantee Form" />
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" name="Guarantee_Date" required />
+          </div>
+          <div class="form-group">
+            <label>Guarantor Full Name &amp; Shareholder No.</label>
+            <input type="text" name="Guarantor_Name_No" placeholder="Enter Full Name &amp; Member/Share No." required />
+          </div>
+          <div class="form-group">
+            <label>Guarantor Phone Contact &amp; NIN</label>
+            <input type="text" name="Guarantor_Contact_NIN" placeholder="e.g. +256 7XX XXX XXX | CM98100..." required />
+          </div>
+          <div class="form-group">
+            <label>Applicant / Borrower Full Name</label>
+            <input type="text" name="Borrower_Full_Name" placeholder="Member Being Guaranteed" required />
+          </div>
+          <div class="form-group">
+            <label>Guaranteed Amount (UGX)</label>
+            <input type="text" name="Guaranteed_Amount" placeholder="e.g. UGX 1,000,000" required />
+          </div>
+          <div class="form-group">
+            <label style="display:flex; align-items:flex-start; gap:0.5rem; font-weight:600;">
+              <input type="checkbox" name="Guarantee_Consent" value="Yes" required
+                style="width:auto; margin-top:4px;" />
+              <span>I pledge my SACCO shares/savings as security for the above loan and authorize recovery from my
+                shares in case of default.</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label>Guarantor Digital Signature (Full Name)</label>
+            <input type="text" name="Guarantor_Signature" placeholder="Type Full Name as Signature" required />
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Submit Guarantee Form</button>
+        </form>
       </div>
+
+      <!-- 5C. Shareholder Dividends Request Form -->
+      <div class="card form-box" id="dividends">
+        <div class="form-logo-header">
+          <img src="Group LOGO.jpg" alt="Ntungamo Municipality Born Again Community SACCO Logo" class="form-top-logo" />
+          <span class="form-org-name">Ntungamo Municipality Born Again Community SACCO</span>
+        </div>
+        <h3>Dividends Request Form</h3>
+        <form action="https://formsubmit.co" method="POST">
+          <input type="hidden" name="_subject" value="New Shareholder Dividends Request" />
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" name="Dividends_Request_Date" required />
+          </div>
+          <div class="form-group">
+            <label>Shareholder Full Name</label>
+            <input type="text" name="Shareholder_Full_Name" placeholder="Enter Full Name" required />
+          </div>
+          <div class="form-group">
+            <label>Account / Share Certificate Number</label>
+            <input type="text" name="Share_Certificate_No" placeholder="Enter Account or Share Number" required />
+          </div>
+          <div class="form-group">
+            <label>Financial Year / Dividend Period</label>
+            <input type="text" name="Dividend_Period" placeholder="e.g. FY 2025 / 2026" required />
+          </div>
+          <div class="form-group">
+            <label>Preferred Payout Mode</label>
+            <select name="Dividend_Payout_Mode" required>
+              <option value="">-- Select Payout Mode --</option>
+              <option value="Credit to SACCO Savings Account">Credit to SACCO Savings Account</option>
+              <option value="Reinvest into Additional Shares">Reinvest into Additional Shares</option>
+              <option value="Mobile Money / Cash Payout">Mobile Money / Cash Payout</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Phone Contact &amp; Digital Signature</label>
+            <input type="text" name="Shareholder_Contact_Signature" placeholder="Phone Number &amp; Full Name Signature"
+              required />
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Submit Dividends Request</button>
+        </form>
+      </div>
+
+      <!-- 5D. Shareholder Commitment Agreement Form -->
+      <div class="card form-box" id="commitment">
+        <div class="form-logo-header">
+          <img src="Group LOGO.jpg" alt="Ntungamo Municipality Born Again Community SACCO Logo" class="form-top-logo" />
+          <span class="form-org-name">Ntungamo Municipality Born Again Community SACCO</span>
+        </div>
+        <h3>Shareholder Commitment Agreement Form</h3>
+        <form action="https://formsubmit.co" method="POST">
+          <input type="hidden" name="_subject" value="New Shareholder Commitment Agreement" />
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" name="Commitment_Date" required />
+          </div>
+          <div class="form-group">
+            <label>Shareholder Full Name</label>
+            <input type="text" name="Commitment_Member_Name" placeholder="Enter Full Name" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number &amp; NIN</label>
+            <input type="text" name="Commitment_Contact_NIN" placeholder="e.g. +256 7XX XXX XXX | CM98100..."
+              required />
+          </div>
+          <div class="form-group">
+            <label>Number of Shares Committed &amp; Value (UGX)</label>
+            <input type="text" name="Committed_Shares_Value" placeholder="e.g. 10 Shares — UGX 500,000" required />
+          </div>
+          <div class="form-group">
+            <label>Commitment Payment Schedule</label>
+            <select name="Commitment_Schedule" required>
+              <option value="">-- Select Schedule --</option>
+              <option value="Full Lump Sum Payment">Full Lump Sum Payment</option>
+              <option value="Monthly Installments">Monthly Installments</option>
+              <option value="Quarterly Installments">Quarterly Installments</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label style="display:flex; align-items:flex-start; gap:0.5rem; font-weight:600;">
+              <input type="checkbox" name="Commitment_Declaration" value="Yes" required
+                style="width:auto; margin-top:4px;" />
+              <span>I commit to abide by the SACCO bylaws, capital contribution schedule, and AGM resolutions.</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label>Shareholder Digital Signature (Full Name)</label>
+            <input type="text" name="Commitment_Signature" placeholder="Type Full Name as Digital Signature" required />
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Submit Commitment Agreement</button>
+        </form>
+      </div>
+
+      <!-- FORM 2: Funeral Insurance Fund Project (F.I.F.) -->
+      <div class="card form-box" id="fif-form">
+        <div class="form-logo-header">
+          <img src="Group LOGO.jpg" alt="Ntungamo Municipality Born Again Community SACCO Logo" class="form-top-logo" />
+          <span class="form-org-name">NTUNGAMO MUNICIPALITY BORN AGAIN COMMUNITY SACCO</span>
+        </div>
+        <h3 style="text-align: center; margin-bottom: 1rem;"> THE FUNERAL INSURANCE FUND PROJECT (F.I.F.)</h3>
+
+        <form action="https://formsubmit.co" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="New Funeral Insurance Fund (F.I.F) Subscription" />
+
+          <div
+            style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 1rem; margin-bottom: 1.25rem; font-size: 0.88rem; color: #334155;">
+            <h4 style="color: #0f172a; margin-bottom: 0.5rem;">Terms and Conditions That Apply</h4>
+            <ol style="padding-left: 1.25rem; line-height: 1.55;">
+              <li><strong>Annual Subscription:</strong> The BADO Funeral Insurance Fund Programme (F.I.F) runs on an
+                annual basis (1 full year); renewal is optional.</li>
+              <li><strong>Subscription Fee:</strong> <strong>70,000 UGX</strong> (Fifty/Seventy Thousand Shillings,
+                subject to update due to prevailing circumstances).</li>
+              <li><strong>Grace Period:</strong> New or starting subscribers undergo a <strong>four (4) months</strong>
+                maturing period after payment before benefits become active.</li>
+              <li>
+                <strong>Benefit Requirements &amp; Payout:</strong>
+                <div style="margin-top: 0.35rem; padding-left: 0.75rem;">
+                  &bull; Beneficiaries MUST be registered by exact name on this form (vacant spaces declare no
+                  beneficiary; updates allowed only for newly biologically born children and spouse).<br />
+                  &bull; Subscriber or Next of Kin MUST immediately inform the office upon death before burial
+                  ceremonies; the Organisation sends its representative to witness the burial.<br />
+                  &bull; Where multiple subscribers share a common deceased beneficiary, a single Fund is considered
+                  toward that beneficiary.<br />
+                  &bull; <strong>Fund Amount:</strong> Currently, the Organisation offers<strong>500,000 UGX</strong>
+                  (Five hundred thousand
+                  shillings) upon loss of a registered beneficiary.
+                </div>
+              </li>
+            </ol>
+            <div style="margin-top: 0.75rem; font-weight: 700; color: #0f172a;">
+              <label style="margin-right: 1.25rem; cursor: pointer;">
+                <input type="radio" name="Terms_Agreement" value="AGREE" required style="width: auto;" /> AGREE
+              </label>
+              <label style="cursor: pointer;">
+                <input type="radio" name="Terms_Agreement" value="NOT" style="width: auto;" /> NOT
+              </label>
+            </div>
+          </div>
+
+          <h4 style="margin-bottom: 0.75rem; color: #0f172a;">Identification &amp; Photos</h4>
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" name="Registration_Date" required />
+          </div>
+          <div class="form-group">
+            <label>ID No. (NIN) &amp; Subscribed Period</label>
+            <input type="text" name="ID_No_And_Period" placeholder="e.g. CM981001056DFD | April 2026 - April 2027"
+              required />
+          </div>
+          <div class="form-group">
+            <label>Principal's Passport Photo</label>
+            <input type="file" name="Principal_Photo" accept="image/*" required />
+          </div>
+          <div class="form-group">
+            <label>Next of Kin's Passport Photo</label>
+            <input type="file" name="Next_of_Kin_Photo" accept="image/*" required />
+          </div>
+
+          <hr style="margin: 1.5rem 0; border: 0; border-top: 2px solid #e2e8f0;" />
+          <h4 style="margin-bottom: 0.75rem; color: #0f172a;">Personal Details (Principal Subscriber)</h4>
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="Principal_First_Name" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="Principal_Last_Name" required />
+          </div>
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date" name="Principal_DOB" required />
+          </div>
+          <div class="form-group">
+            <label>Marital Status</label>
+            <select name="Principal_Marital_Status" required>
+              <option value="">-- Select --</option>
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+              <option value="Widowed">Widowed</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Gender</label>
+            <select name="Principal_Gender" required>
+              <option value="">-- Select --</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Contact(s)</label>
+            <input type="tel" name="Principal_Contact" placeholder="e.g. 0777 XXX XXX" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="Principal_Email" placeholder="Optional" />
+          </div>
+          <div class="form-group">
+            <label>Employment &amp; Profession</label>
+            <input type="text" name="Principal_Employment_Profession" placeholder="e.g. Welding / Business" required />
+          </div>
+          <div class="form-group">
+            <label>Village / Cell, Subcounty &amp; District</label>
+            <input type="text" name="Principal_Address" placeholder="e.g. Cell 8, Central Division, Ntungamo"
+              required />
+          </div>
+          <div class="form-group">
+            <label>Subscriber Digital Signature (Full Name)</label>
+            <input type="text" name="Principal_Signature" placeholder="Type Full Name as Signature" required />
+          </div>
+
+          <hr style="margin: 1.5rem 0; border: 0; border-top: 2px solid #e2e8f0;" />
+          <h4 style="margin-bottom: 0.75rem; color: #0f172a;">Next of Kin Details</h4>
+          <div class="form-group">
+            <label>Next of Kin First Name</label>
+            <input type="text" name="NOK_First_Name" required />
+          </div>
+          <div class="form-group">
+            <label>Next of Kin Last Name</label>
+            <input type="text" name="NOK_Last_Name" required />
+          </div>
+          <div class="form-group">
+            <label>Next of Kin Gender</label>
+            <select name="NOK_Gender" required>
+              <option value="">-- Select --</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Next of Kin Contact(s) &amp; Email</label>
+            <input type="text" name="NOK_Contact_Email" placeholder="e.g. 0776 XXX XXX | email@example.com" required />
+          </div>
+          <div class="form-group">
+            <label>Next of Kin Employment &amp; Profession</label>
+            <input type="text" name="NOK_Employment_Profession" placeholder="e.g. Accountant" required />
+          </div>
+          <div class="form-group">
+            <label>Next of Kin Village, Subcounty &amp; District</label>
+            <input type="text" name="NOK_Address" placeholder="e.g. Cell 8, Ntungamo" required />
+          </div>
+          <div class="form-group">
+            <label>Nature of Relationship</label>
+            <input type="text" name="NOK_Relationship" placeholder="e.g. Wife, Husband, Daughter, Son" required />
+          </div>
+
+          <hr style="margin: 1.5rem 0; border: 0; border-top: 2px solid #e2e8f0;" />
+          <h4 style="margin-bottom: 0.75rem; color: #0f172a;">Registered Beneficiaries</h4>
+          <div class="form-group">
+            <label>1) Biological Children (List 1 to 5)</label>
+            <textarea name="Biological_Children" rows="4" placeholder="1. &#10;2. &#10;3. &#10;4. &#10;5. "></textarea>
+          </div>
+          <div class="form-group">
+            <label>2) Biological Parents (List 1 to 2)</label>
+            <textarea name="Biological_Parents" rows="2" placeholder="1. &#10;2. "></textarea>
+          </div>
+          <div class="form-group">
+            <label>3) Key In-Laws (List 1 to 2)</label>
+            <textarea name="Key_In_Laws" rows="2" placeholder="1. &#10;2. "></textarea>
+          </div>
+          <div class="form-group">
+            <label>4) Spouse</label>
+            <input type="text" name="Spouse" placeholder="Enter Spouse Full Name" />
+          </div>
+          <div class="form-group">
+            <label>Any Comments / Notes</label>
+            <textarea name="Applicant_Comments" rows="2" placeholder="Optional comments..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Submit Funeral Insurance Fund (F.I.F) Form</button>
+        </form>
+      </div>
+
+
     </section>
     <!-- FIXED DEPOSIT TENDER FORM -->
     <div class="card form-box" id="fixed-tender">
@@ -880,71 +1340,48 @@
     <div class="copyright">&copy; 2026 Ntungamo Municipality Born Again Community sacco
       (BADG) — Ntungamo Municipality.</div>
   </footer>
-
   <script>
-    const params = new URLSearchParams(window.location.search);
-    const type = params.get('type');
-    const map = {
-      membership: 'Membership Registration Form',
-      family: 'Family Protection Subscription Form',
-      loan: 'Loan Application Form',
-      agent: 'Be An Agent Application',
-      dividends: 'Dividends Request Form',
-      transfer: 'Share Transfer Request Form',
-      commitment: 'Commitment Agreement Form',
-      investor: 'Investor Onboarding Form',
-      virtual: 'Virtual Business Collaboration',
-      partner: 'Investor Onboarding Form',
-      shareholder: 'Dividends Request Form'
-    };
-    if (type && map[type]) {
-      const select = document.getElementById('formSelect');
-      for (let opt of select.options) {
-        if (opt.text === map[type]) {
-          opt.selected = true;
-          break;
+    window.addEventListener('DOMContentLoaded', () => {
+      const type = (new URLSearchParams(window.location.search).get('type') || 'membership').toLowerCase();
+      const map = {
+        membership: 'membership',
+        group: 'group',
+        'fixed-tender': 'fixed-tender',
+        'fixed-withdrawal': 'fixed-withdrawal',
+        family: 'family',
+        fif: 'fif-form',
+        loan: 'loan',
+        agent: 'partner',
+        partner: 'partner',
+        investor: 'partner',
+        virtual: 'partner',
+        shareholder: 'guarantees',
+        dividends: 'dividends',
+        transfer: 'shareholder',
+        commitment: 'commitment'
+
+      };
+
+      const targetId = map[type] || 'membership';
+      document.querySelectorAll('.form-box, .form-card').forEach(box => {
+        if (box.id === targetId) {
+          box.classList.add('active-form');
+          box.style.display = 'block';
+        } else {
+          box.classList.remove('active-form');
+          box.style.display = 'none';
         }
-      }
-    }
+      });
+    });
   </script>
 
 
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    const type = (new URLSearchParams(window.location.search).get('type') || 'membership').toLowerCase();
-    const map = {
-      membership: 'membership',
-      group: 'group',
-      'fixed-tender': 'fixed-tender',
-      'fixed-withdrawal': 'fixed-withdrawal',
-      family: 'family',
-      loan: 'loan',
-      agent: 'partner',
-      partner: 'partner',
-      investor: 'partner',
-      virtual: 'partner',
-      shareholder: 'shareholder',
-      dividends: 'shareholder',
-      transfer: 'share-transfer-form',
-      commitment: 'shareholder'
-    };
-
-    const targetId = map[type] || 'membership';
-    document.querySelectorAll('.form-box, .form-card').forEach(box => {
-      if (box.id === targetId) {
-        box.classList.add('active-form');
-        box.style.display = 'block';
-      } else {
-        box.classList.remove('active-form');
-        box.style.display = 'none';
-      }
-    });
-  });
-</script>
 
 
-
-
+  <button type="button"
+    onclick="window.scrollTo({top:0,behavior:'smooth'});document.querySelector('.nav-container nav').classList.add('mobile-open');"
+    style="position:fixed;bottom:20px;right:20px;background:#1e3a8a;color:#ffffff;border:none;border-radius:50px;padding:12px 20px;font-size:0.95rem;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,0.3);z-index:99999;cursor:pointer;">&uarr;
+    Top / Menu</button>
 </body>
 
 </html>
