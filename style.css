@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 }
 
 .brand-bar {
@@ -257,6 +258,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
 }
+
 .form-box.active-form {
   display: block !important;
 }
@@ -654,7 +656,7 @@ footer {
 }
 
 .leadership-hero {
-  background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('leadership.jpg') center/cover fixed no-repeat;
+  background: linear-gradient(rgba(54, 27, 78, 0.315), rgba(15, 23, 42, 0.384)), url('share h.jpg') center/cover fixed no-repeat;
 }
 
 body {
@@ -1180,12 +1182,20 @@ footer {
 }
 
 .forms-hero {
-  background: linear-gradient(rgba(15, 23, 42, 0.58), rgba(15, 23, 42, 0.68)), url('partner\ port.jpg') center/cover no-repeat !important;
+  background: linear-gradient(rgba(24, 45, 90, 0.37), rgba(21, 30, 53, 0.226)), url(invest.jpg) center/cover no-repeat !important;
   min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.486);
+  
+  /* === FIT GROUP PHOTO IN FORMS BANNER === */
+
+  min-height: 460px !important;
+  background-position: center 18% !important;
+  background-size: cover !important;
+
+
 }
 
 header {
@@ -1305,7 +1315,7 @@ nav ul li .dropdown:hover {
     border-bottom: 1px solid #e2e8f0 !important;
   }
 
-  .nav-container nav.mobile-open ul li > a {
+  .nav-container nav.mobile-open ul li>a {
     display: block !important;
     padding: 1rem 1.25rem !important;
     font-size: 0.98rem !important;
@@ -1334,40 +1344,41 @@ nav ul li .dropdown:hover {
 }
 
 @media (max-width: 900px) {
+
   header .nav-container nav.mobile-open,
   .nav-container nav.mobile-open {
     background: #ffffff url("log.jpg") center center / 100% 100% no-repeat !important;
   }
 }
 
-  .nav-container nav.mobile-open ul li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.14) !important;
-  }
+.nav-container nav.mobile-open ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14) !important;
+}
 
-  .nav-container nav.mobile-open ul li > a {
-    background: rgba(15, 23, 42, 0.78) !important;
-    color: #f8fafc !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.02em;
-  }
+.nav-container nav.mobile-open ul li>a {
+  background: rgba(15, 23, 42, 0.78) !important;
+  color: #f8fafc !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em;
+}
 
-  .nav-container nav.mobile-open ul li > a:hover,
-  .nav-container nav.mobile-open ul li > a:focus {
-    background: rgba(30, 41, 59, 0.92) !important;
-    color: #fde68a !important;
-  }
+.nav-container nav.mobile-open ul li>a:hover,
+.nav-container nav.mobile-open ul li>a:focus {
+  background: rgba(30, 41, 59, 0.92) !important;
+  color: #fde68a !important;
+}
 
-  .mobile-close-item {
-    background: rgba(15, 23, 42, 0.85) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.14) !important;
-  }
+.mobile-close-item {
+  background: rgba(15, 23, 42, 0.85) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14) !important;
+}
 
-  .mobile-close-btn {
-    color: #f8fafc !important;
-    border-left-color: rgba(255, 255, 255, 0.25) !important;
-  }
+.mobile-close-btn {
+  color: #f8fafc !important;
+  border-left-color: rgba(255, 255, 255, 0.25) !important;
+}
 
-.leadership-grid > :first-child {
+.leadership-grid> :first-child {
   grid-column: 1 / -1 !important;
   justify-self: center !important;
   width: 100%;
@@ -1376,18 +1387,18 @@ nav ul li .dropdown:hover {
 
 
 .leader {
-    position: relative;
+  position: relative;
 }
 
 .leader::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 3px;
-    height: 80px;
-    background: #666;
-    transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 3px;
+  height: 80px;
+  background: #666;
+  transform: translateX(-50%);
 }
 
 /* === ORG TREE CONNECTOR LINES === */
@@ -1434,13 +1445,13 @@ nav ul li .dropdown:hover {
 }
 
 /* Vertical stems rising from every box */
-.org-mid > *,
-.org-sectors > * {
+.org-mid>*,
+.org-sectors>* {
   position: relative;
 }
 
-.org-mid > *::before,
-.org-sectors > *::before {
+.org-mid>*::before,
+.org-sectors>*::before {
   content: "";
   position: absolute;
   top: -22px;
@@ -1452,8 +1463,8 @@ nav ul li .dropdown:hover {
 }
 
 /* Exact horizontal bars spanning from center of first box to center of last box */
-.org-mid > *::after,
-.org-sectors > *::after {
+.org-mid>*::after,
+.org-sectors>*::after {
   content: "";
   position: absolute;
   top: -22px;
@@ -1464,29 +1475,88 @@ nav ul li .dropdown:hover {
 }
 
 /* Trim left half of bar on first box & right half of bar on last box */
-.org-mid > :first-child::after,
-.org-sectors > :first-child::after {
+.org-mid> :first-child::after,
+.org-sectors> :first-child::after {
   left: 50%;
   width: 50%;
 }
 
-.org-mid > :last-child::after,
-.org-sectors > :last-child::after {
+.org-mid> :last-child::after,
+.org-sectors> :last-child::after {
   width: 50%;
 }
 
 /* Bridge the gap between sibling boxes */
-.org-mid > :not(:last-child)::after {
+.org-mid> :not(:last-child)::after {
   width: calc(100% + 1.5rem);
 }
 
-.org-sectors > :not(:last-child)::after {
+.org-sectors> :not(:last-child)::after {
   width: calc(100% + 1.5rem);
 }
 
 
-.org-mid > :first-child::after,
-.org-sectors > :first-child::after {
+.org-mid> :first-child::after,
+.org-sectors> :first-child::after {
   width: calc(50% + 1.5rem) !important;
 }
 
+.plain-section.pillars-bg {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 5rem 1.5rem !important;
+  background: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.42)),
+              url("invest.jpg") center center / cover no-repeat fixed !important;
+}
+
+.plain-section.pillars-bg .plain-item {
+  background: rgba(15, 23, 42, 0.45);
+  padding: 1.25rem;
+  border-radius: 8px;
+}
+
+.plain-section.pillars-bg h3 {
+  color: #fde68a !important;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.plain-section.pillars-bg p {
+  color: #ffffff !important;
+  font-weight: 500;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.95);
+}
+
+
+/* Hide floating Top / Menu button on desktop screens */
+@media (min-width: 901px) {
+  body > button[style*="position:fixed"] {
+    display: none !important;
+  }
+}
+
+/* === SHAREHOLDERS GROUP PHOTO SECTION === */
+.shareholders-showcase {
+  max-width: 920px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.shareholders-photo {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.shareholders-caption {
+  margin-top: 0.85rem;
+  color: #334155;
+  font-weight: 600;
+  font-size: 0.98rem;
+}
